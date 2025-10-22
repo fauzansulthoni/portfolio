@@ -1,18 +1,18 @@
 import React from "react";
 const skillItems = [
-  { name: "bootstrap", img: "/logo/bootstrap.svg" },
-  { name: "css", img: "/logo/css.svg" },
-  { name: "html", img: "/logo/html.svg" },
-  { name: "jquery", img: "/logo/jquery.svg" },
-  { name: "js", img: "/logo/js.svg" },
-  { name: "laravel", img: "/logo/laravel.svg" },
-  { name: "mongodb", img: "/logo/mongodb.svg" },
-  { name: "mui", img: "/logo/mui.svg" },
-  { name: "mysql", img: "/logo/mysql.svg" },
-  { name: "nodejs", img: "/logo/nodejs.svg" },
-  { name: "php", img: "/logo/php.svg" },
-  { name: "vite", img: "/logo/vite.svg" },
-  { name: "redux", img: "/logo/redux.png" },
+  { name: "bootstrap", img: "./logo/bootstrap.svg" },
+  { name: "css", img: "./logo/css.svg" },
+  { name: "html", img: "./logo/html.svg" },
+  { name: "jquery", img: "./logo/jquery.svg" },
+  { name: "js", img: "./logo/js.svg" },
+  { name: "laravel", img: "./logo/laravel.svg" },
+  { name: "mongodb", img: "./logo/mongodb.svg" },
+  { name: "mui", img: "./logo/mui.svg" },
+  { name: "mysql", img: "./logo/mysql.svg" },
+  { name: "nodejs", img: "./logo/nodejs.svg" },
+  { name: "php", img: "./logo/php.svg" },
+  { name: "vite", img: "./logo/vite.svg" },
+  { name: "redux", img: "./logo/redux.png" },
 ];
 
 const Skill = ({
