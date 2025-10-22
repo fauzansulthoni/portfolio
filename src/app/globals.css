@@ -1,26 +1,45 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root {  
+  --primary-main: #003F5C;
+  --primary-dark: #001620;
+  --primary-light: #0b5187;
 }
+
 
 @theme inline {
-  --color-background: var(--background);
+  --color-primary-main: var(--primary-main);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-bebasNeue: var(--font-bebasNeue);
+  --font-outfit: var(--font-outfit);
+
+  --shadow-glow-dark: 0 0 15px white;
+  --shadow-glow-main: 0 0 10px white;
+  --shadow-glow-light: 0 0 5px white;
 }
 
-@media (prefers-color-scheme: dark) {
+.foreground{
+  background-image: linear-gradient(0, var(--primary-dark) 0%, var(--primary-main) 100%);
+  /* background-image: linear-gradient(320deg, red 0%, blue 100%); */
+}
+
+.no-scroll-btn {
+overflow: auto; /* Enables scrolling */
+scrollbar-width: none; /* Firefox */
+-ms-overflow-style: none; /* IE and Edge */
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
   }
+} */
+html {
+  scroll-behavior: smooth;
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+body {  
+  font-family: var(--font-outfit), Helvetica, sans-serif;
+  overscroll-behavior: none;
 }
