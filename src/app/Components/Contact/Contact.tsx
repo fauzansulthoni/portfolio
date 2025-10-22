@@ -18,6 +18,12 @@ const contactItems = [
     color: "border-red-500",
     icon: "ri-google-fill",
   },
+  {
+    contact: "https://github.com/fauzansulthoni",
+    account: "Github",
+    color: "border-violet-500",
+    icon: "ri-github-fill",
+  },
 ];
 const Contact = ({
   selectedMenu,

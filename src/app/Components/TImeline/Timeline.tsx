@@ -35,7 +35,7 @@ const Timeline = ({
 }) => {
   return (
     <div
-      className="xl:h-screen w-full flex items-center justify-end px-0 sm:px-8"
+      className="h-screen w-full flex items-center justify-end px-0 sm:px-8"
       id="timeline"
     >
       <div className="bg-slate-50 dark:bg-slate-700 w-full rounded-lg p-4 sm:p-8 shadow-lg max-h-screen overflow-y-auto">

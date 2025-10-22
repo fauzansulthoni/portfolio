@@ -1,18 +1,24 @@
 import React from "react";
 const skillItems = [
-  { name: "bootstrap", img: "./logo/bootstrap.svg" },
-  { name: "css", img: "./logo/css.svg" },
   { name: "html", img: "./logo/html.svg" },
-  { name: "jquery", img: "./logo/jquery.svg" },
-  { name: "js", img: "./logo/js.svg" },
-  { name: "laravel", img: "./logo/laravel.svg" },
-  { name: "mongodb", img: "./logo/mongodb.svg" },
+  { name: "css", img: "./logo/css.svg" },
+  { name: "tailwind", img: "./logo/tailwind.svg" },
+  { name: "bootstrap", img: "./logo/bootstrap.svg" },
   { name: "mui", img: "./logo/mui.svg" },
-  { name: "mysql", img: "./logo/mysql.svg" },
-  { name: "nodejs", img: "./logo/nodejs.svg" },
+  { name: "javascript", img: "./logo/javascript.svg" },
+  { name: "typescript", img: "./logo/typescript.svg" },
   { name: "php", img: "./logo/php.svg" },
+  { name: "mysql", img: "./logo/mysql.svg" },
+  { name: "mongodb", img: "./logo/mongodb.svg" },
+  { name: "postgresql", img: "./logo/postgresql.svg" },
+  { name: "jquery", img: "./logo/jquery.svg" },
+  { name: "nodejs", img: "./logo/nodejs.svg" },
+  { name: "express", img: "./logo/express.svg" },
+  { name: "laravel", img: "./logo/laravel.svg" },
+  { name: "react", img: "./logo/react.svg" },
+  { name: "redux", img: "./logo/redux.svg" },
   { name: "vite", img: "./logo/vite.svg" },
-  { name: "redux", img: "./logo/redux.png" },
+  { name: "nextjs", img: "./logo/nextjs.svg" },
 ];
 
 const Skill = ({
@@ -36,7 +42,7 @@ const Skill = ({
           {skillItems.map((item, index) => (
             <div
               key={index}
-              className="xl:col-span-1 col-span-3 flex flex-col justify-center items-center gap-2 bg-slate-200 dark:bg-slate-900 dark:text-slate-400 rounded-xl aspect-square"
+              className="xl:col-span-1 col-span-2 flex flex-col justify-center items-center gap-2 bg-slate-200 dark:bg-slate-50/10 dark:text-slate-900 rounded-xl aspect-square"
             >
               <div className="sm:w-32 w-10 aspect-square overflow-hidden rounded-lg flex items-center justify-center">
                 <img src={item.img} alt="" className="object-cover" />

@@ -20,7 +20,7 @@ const ScrolledContent = () => {
     <>
       <Sidebar selectedMenu={selectedMenu} setSelectedMenu={setSelectedMenu} />
       <div className="w-full xl:w-[80%]">
-        <div className="overflow-hidden h-screen block">
+        <div className="overflow-hidden h-screen">
           {/* <div id="smooth-content"> */}
           <Welcome
             selectedMenu={selectedMenu}

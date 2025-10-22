@@ -28,7 +28,7 @@ const Fab = () => {
           setCounter(counter + 1);
         }
       }}
-      className="h-16 w-16 rounded-full bg-slate-400 text-black fixed bottom-8 right-8 text-3xl hover:ring-2 focus:ring-slate-100 hover:ring-slate-100 cusror-pointer shadow-2xl xl:hidden"
+      className="h-16 w-16 rounded-full bg-slate-400 text-black fixed bottom-8 right-8 text-3xl hover:ring-2 focus:ring-slate-100 hover:ring-slate-100 cusror-pointer shadow-2xl cursor-pointer xl:hidden"
     >
       {counter !== anchors.length ? (
         <i className="ri-arrow-down-line"></i>

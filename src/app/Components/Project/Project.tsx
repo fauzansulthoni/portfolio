@@ -40,28 +40,28 @@ const ProjectItems = [
     description:
       "My first React-based project, built to explore frontend development. Though logic is incomplete, it served as a learning experience in React and backend integration.",
     stack: "Express, React, MUI, MongoDB",
-    link: "GitHub repository",
+    link: "https://github.com/fauzansulthoni/hospital-management-system",
   },
   {
     name: "SpendWise – Spending Tracker",
     description:
       "A personal finance tracker to monitor transactions, control spending, and build budget plans. Built to explore scalable UI architecture and state management in React.",
     stack: "Express, React, MUI, MongoDB",
-    link: "GitHub repository",
+    link: "https://github.com/fauzansulthoni/spending-tracker-app",
   },
   {
     name: "Next.js Todo App",
     description:
       "An experimental project to deepen understanding of Next.js. Supports CRUD operations and image uploads, with a focus on data manipulation and routing.",
     stack: "Next.js, Tailwind CSS, MongoDB",
-    link: "GitHub repository",
+    link: "https://github.com/fauzansulthoni/next-todo-app",
   },
   {
     name: "React Todo App",
     description:
       "A simple task manager for daily activities. Ideal for beginners, with full CRUD implementation and insights into production-level app structure.",
     stack: "Express, React, MUI, MongoDB",
-    link: "GitHub repository",
+    link: "https://github.com/fauzansulthoni/todo-app",
   },
 ];
 const Project = ({
@@ -71,6 +71,13 @@ const Project = ({
   selectedMenu: string;
   setSelectedMenu: React.Dispatch<React.SetStateAction<string>>;
 }) => {
+  const handleProjectClick = (link: string) => {
+    if (link.includes("Not available")) {
+      alert(`🚫 Sorry, this project link is not available yet. [${link}]`);
+    } else {
+      window.open(link, "_blank");
+    }
+  };
   return (
     <div
       className="xl:h-screen w-full flex items-center justify-end px-0 sm:px-8"
@@ -95,7 +102,11 @@ const Project = ({
               <p className="sm:text-[1.5rem] text-md text-slate-500 mb-2">
                 {item.description}
               </p>
-              <a className="sm:text-[1.5rem] text-blue-500" href="#">
+              <a
+                onClick={() => handleProjectClick(item.link)}
+                className="sm:text-[1.5rem] text-blue-500"
+                href="#"
+              >
                 View Project
                 <i className="mx-2 ri-arrow-right-long-line"></i>
               </a>
