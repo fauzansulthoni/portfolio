@@ -25,6 +25,20 @@ const timelineItems = [
     description: `Coordinated leadership schedules, documented major events, managed institutional correspondence, and supported executive logistics and communication.`,
     date: "Feb 2022 - Mar 2025",
   },
+  {
+    title: "Web Development Certification Journey",
+    description: `Completed multiple certifications on FreeCodeCamp to strengthen frontend and backend skills:
+    <a target="_blank" style="color: orange;" href="https://www.freecodecamp.org/certification/deozz/responsive-web-design">Responsive Web Design</a>,
+    <a target="_blank" style="color: orange;" href="https://www.freecodecamp.org/certification/deozz/javascript-algorithms-and-data-structures-v8">JavaScript Algorithms and Data Structures v8</a>,
+    <a target="_blank" style="color: orange;" href="https://www.freecodecamp.org/certification/deozz/front-end-development-libraries">Front End Development Libraries</a>,
+    and <a target="_blank" style="color: orange;" href="https://www.freecodecamp.org/certification/deozz/back-end-development-and-apis">Back End Development and APIs</a>`,
+    //     description: `Completed multiple certifications on FreeCodeCamp to strengthen frontend and backend skills:
+    // [Responsive Web Design](https://www.freecodecamp.org/certification/deozz/responsive-web-design)
+    // [JavaScript Algorithms and Data Structures v8](https://www.freecodecamp.org/certification/deozz/javascript-algorithms-and-data-structures-v8)
+    // [Front End Development Libraries](https://www.freecodecamp.org/certification/deozz/front-end-development-libraries)
+    // [Back End Development and APIs](https://www.freecodecamp.org/certification/deozz/back-end-development-and-apis)`,
+    date: "Mar 2025 - Now",
+  },
 ];
 const Timeline = ({
   selectedMenu,
@@ -57,7 +71,13 @@ const Timeline = ({
                   {item.date}
                 </time>
                 <p className="mt-3 sm:text-[1.5rem] dark:text-slate-400">
-                  {item.description}
+                  {item.title === "Web Development Certification Journey" ? (
+                    <span
+                      dangerouslySetInnerHTML={{ __html: item.description }}
+                    />
+                  ) : (
+                    item.description
+                  )}
                 </p>
               </div>
             ))}
