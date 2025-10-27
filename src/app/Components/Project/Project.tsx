@@ -19,7 +19,7 @@ const ProjectItems = [
     description:
       "An app built for the 2019 PPI Turkey election to help gather community data. Developed for Mr. Azhar Afif, an Indonesian postgraduate student in Turkey. Donated without charge.",
     stack: "PHP, MySQL, CodeIgniter",
-    link: "Not available",
+    link: "https://www.youtube.com/watch?v=a72DMY9Ry6o",
   },
   {
     name: "Teacher Database",
